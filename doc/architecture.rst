@@ -26,7 +26,7 @@ The Reliable Autonomic Distributed Object Store (RADOS) provides a scalable obje
 when recovering from failures or migrating data to expand clusters.   RADOS employs existing node device intelligence to maximized scalability.
 The RADOS Block Device (RBD) provides a block device interface to a Linux machine, while striping the data across multiple RADOS objects for improved performance.  
 RDB is supported for Linux kernels 2.6.37 and higher.  Each RDB device contains a directory with files and information
-
+.. image:: /images/CEPHConfig.jpg
 ======================
 RADOS GATEWAY
 ======================
