@@ -7,9 +7,11 @@ About this Document
 ======================
 This document describes the features and benefits of using the Ceph Unified Distributed Storage System, and why it is superior to other  systems.  
 The audience for this document consists of sales and marketing personnel, new customers, and all persons who need to get a basic overview of the features and functionality of the system.
+
 ======================
 Introduction to Ceph
 ======================
+
 Ceph is a unified, distributed  file system that operates on a large number of hosts connected by a network.  Ceph has been designed to accommodate multiple  petabytes of storage with ease.  Since file sizes and network systems are always increasing, Ceph is perfectly positioned to accommodate these new technologies with its unique, self-healing and self-replicating architecture.   Customers that need to move large amounts of metadata, such as media and entertainment companies, can greatly benefit from this product. Ceph is also dynamic;  no need to cache data like those old-fashioned client-servers!
 Benefits of Using Ceph
 Ceph’s flexible and scalable architecture translates into cost savings for users.  Its powerful load balancing technology ensures the highest performance in terms of both speed and 
@@ -18,7 +20,9 @@ reliability.  Nodes can be added “on the fly” with no impact to the system. In t
 Manageability
 Ceph is easy to manage, requiring little or no system administrative intervention.  Its powerful placement algorithm and intelligent nodes manage data seamlessly across any node
 configuration.  It also features multiple access methods to its object storage, block storage, and file systems.  Figure 1 displays this configuration.
-.. image:: /images/CEPHConfig.jpg
+
+.. image:: images/CEPHConfig.jpg
+
 ======================
 RADOS
 ======================
@@ -26,7 +30,8 @@ The Reliable Autonomic Distributed Object Store (RADOS) provides a scalable obje
 when recovering from failures or migrating data to expand clusters.   RADOS employs existing node device intelligence to maximized scalability.
 The RADOS Block Device (RBD) provides a block device interface to a Linux machine, while striping the data across multiple RADOS objects for improved performance.  
 RDB is supported for Linux kernels 2.6.37 and higher.  Each RDB device contains a directory with files and information
-.. image:: /images/CEPHConfig.jpg
+
+.. image:: images/RADOS.jpg
 ======================
 RADOS GATEWAY
 ======================
