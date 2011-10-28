@@ -14,9 +14,9 @@ Introduction to Ceph
 
 Ceph is a unified, distributed  file system that operates on a large number of hosts connected by a network.  Ceph has been designed to accommodate multiple  petabytes of storage with ease.  Since file sizes and network systems are always increasing, Ceph is perfectly positioned to accommodate these new technologies with its unique, self-healing and self-replicating architecture.   Customers that need to move large amounts of metadata, such as media and entertainment companies, can greatly benefit from this product. Ceph is also dynamic;  no need to cache data like those old-fashioned client-servers!
 
----------------------
+-----------------------
 Benefits of Using Ceph
-----------------------
+-----------------------
 
 Cephs flexible and scalable architecture translates into cost savings for users.  Its powerful load balancing technology ensures the highest performance in terms of both speed and 
 reliability.  Nodes can be added *on the fly* with no impact to the system. In the case of node failure, the load is re-distributed with no degradation to the system. 
@@ -56,7 +56,7 @@ Hypervisor Support
 RBD supports the *QEMU* processor emulator and the *Kernel-based Virtual Machine* (KVM) virtualization infrastructure for the Linux kernel.  Normally, these hypervisors would not be used 
 together in a single configuration.
 
-----------------------
+---------------------
 KVM RBD
 ---------------------
 The Linux Kernel-based Virtual Machine (KVM) RBD provides the functionality for striping data across multiple distributed RADOS objects for improved performance.  

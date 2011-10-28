@@ -6,7 +6,7 @@ Planning a Ceph Cluster Configuration
 The following section contains guidelines for planning the deployment for a Ceph cluster configuration.  A Ceph cluster consists of the following core components:
 
 * Monitors. These must be an odd number, such as one, three, or five.  Three is the preferred configuration.
-* Object Storage Devices (OSD) tp be used as storage nodes
+* Object Storage Devices (OSD).  These are used as storage nodes
 * Metadata Servers (MDS).  These are optional depending on the configuration.
 For redundancy, you should employ several of these components.
 
@@ -25,6 +25,7 @@ Hardware Requirements:
 
 .. image:: images/warning.jpg
 .. Warning::
+
 Never configure 2 monitors per cluster.  If you do, they will both have to be up all of the time, which will greatly degrade system performance. 
 
 
@@ -65,6 +66,7 @@ Installing Ceph
 =====================
 
 Ceph Installation consists of the following procedures:
+
 #.	Installing and Compiling Ceph using mkcephfs
 #.	Obtaining the tar file.
 #.	Retrieving the source code from Git for the Linux Kernel for the server
