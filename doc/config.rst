@@ -1,9 +1,10 @@
 
-=============================================================
+======================================
 Planning a Ceph Cluster Configuration
 ======================================
 
 The following section contains guidelines for planning the deployment for a Ceph cluster configuration.  A Ceph cluster consists of the following core components:
+
 * Monitors. These must be an odd number, such as one, three, or five.  Three is the preferred configuration.
 * Object Storage Devices (OSD) tp be used as storage nodes
 * Metadata Servers (MDS).  These are optional depending on the configuration.
@@ -55,7 +56,7 @@ Hardware Requirements
 #.	Fast, low latency network 
 #.	At least two servers for redundancy and load balancing
 
-.. tips:: 
+.. TIPS:: 
 If you have just a few nodes, put cmon, cmds, and cosd on the same node.  For moderate node configurations, put cmon and cmds together, and cosd on the disk nodes.  
 For large node configurations, put cmon, cmds, and cosd each on their own dedicated machine. 
 
@@ -86,18 +87,18 @@ To build Ceph from the source code, you must have the following packages install
 *	cdbs 
 *	g++ 
 *	gcc 
-?	git 
-?	libatomic-ops-dev 
-?	libboost-dev 
-?	libcrypto++-dev 
-?	libcrypto++ 
-?	libedit-dev 
-?	libexpat1-dev 
-?	libfcgi-dev 
-?	libfuse-dev 
-?	libgoogle-perftools-dev 
-?	libgtkmm-2.4-dev 
-?	libtool 
-?	pkg-config 
+*	git 
+*	libatomic-ops-dev 
+*	libboost-dev 
+*	libcrypto++-dev 
+*	libcrypto++ 
+*	libedit-dev 
+*	libexpat1-dev 
+*	libfcgi-dev 
+*	libfuse-dev 
+*	libgoogle-perftools-dev 
+*	libgtkmm-2.4-dev 
+*	libtool 
+*	pkg-config 
  
 

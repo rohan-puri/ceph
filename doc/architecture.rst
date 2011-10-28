@@ -43,7 +43,7 @@ when recovering from failures or migrating data to expand clusters.   RADOS empl
 
 
 --------------
-RBD
+RADOS Block Device
 ---------------
 The *RADOS Block Device* (RBD) provides a block device interface to a Linux machine.  To the user, RDB is transparent, which means that the entire Ceph system looks like a single, 
 limitless hard drive that is always up and has no size limitations. The RADOS Block Device (RBD) provides this interface while striping the data across multiple RADOS objects for 
@@ -83,6 +83,7 @@ Related Documentation
 ----------------------
 
 Once you have determined your configuration needs, make sure you have access to the following documents:
+
 * Ceph Installation and Configuration Guide
 * Ceph System Administration Guide
 * Ceph Troubleshooting Manual
