@@ -1,6 +1,6 @@
 
 =============================================================
- Planning a Ceph Cluster Configuration
+Planning a Ceph Cluster Configuration
 ======================================
 
 The following section contains guidelines for planning the deployment for a Ceph cluster configuration.  A Ceph cluster consists of the following core components:
@@ -35,10 +35,10 @@ The RADOS OSDs store the actual data on the disks. A minimum of two is required.
 --------------------
 Hardware Requirements
 --------------------
-#	As many disks as possible for faster performance and scalability
-#	At least one SSD or NVRAM for a journal, or a RAID controller with a battery-backed NVRAM. 
-#	Ample RAM for better file system caching 
-#	Fast network 
+#.	As many disks as possible for faster performance and scalability
+#.	At least one SSD or NVRAM for a journal, or a RAID controller with a battery-backed NVRAM. 
+#.	Ample RAM for better file system caching 
+#.	Fast network 
 
 --------------------
 Metadata Servers (MDS)
@@ -50,10 +50,10 @@ Metadata servers can be added into the cluster on an as-needed basis.  The load 
 Hardware Requirements
 --------------------
 
-•	Large amount of  RAM 
-•	Fast CPU 
-•	Fast (low latency) network 
-•	At least two servers for redundancy and load balancing
+#.	Large amount of  RAM 
+#.	Fast CPU 
+#.	Fast, low latency network 
+#.	At least two servers for redundancy and load balancing
 
 .. tips:: 
 If you have just a few nodes, put cmon, cmds, and cosd on the same node.  For moderate node configurations, put cmon and cmds together, and cosd on the disk nodes.  
@@ -64,13 +64,13 @@ Installing Ceph
 =====================
 
 Ceph Installation consists of the following procedures:
-1.	Installing and Compiling Ceph using mkcephfs
-2.	Obtaining the tar file.
-3.	Retrieving the source code from Git for the Linux Kernel for the server
-4.	Configuring the Ceph Cluster
-5.	Creating the file system
-6.	Starting Ceph
-7.	Mounting the file system
+#.	Installing and Compiling Ceph using mkcephfs
+#.	Obtaining the tar file.
+#.	Retrieving the source code from Git for the Linux Kernel for the server
+#.	Configuring the Ceph Cluster
+#.	Creating the file system
+#.	Starting Ceph
+#.	Mounting the file system 
 
 Before installing Ceph, check to make sure the dependencies have been installed.  If they have not, execute the procedure shown in the next section.
 
@@ -80,10 +80,10 @@ Ceph Dependencies
 =====================
 To build Ceph from the source code, you must have the following packages installed on your Linux machine:
  
-?	autotools-dev 
-?	autoconf 
-?	automake 
-?	cdbs 
+*	autotools-dev 
+* autoconf 
+*	automake 
+*	cdbs 
 ?	g++ 
 ?	gcc 
 ?	git 
