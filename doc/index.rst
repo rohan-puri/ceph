@@ -1,9 +1,19 @@
 =================
- Welcome to Ceph
+ Getting Started
 =================
 
-Ceph is a distributed network storage and file system with distributed
-metadata management and POSIX semantics.
+Before you begin configuring your system for Ceph, use the following checklist to decide what type of system you need.
+1.	Identify the amount of storage that you need based on your current data, network traffic, workload, and other parameters
+2.	Identify the growth potential for your business so that you can project ahead for future storage needs.
+3.	Plan ahead for redundancy and replacement options.
+4.	Study market forecasts and how they affect your business. 
+Preparing a Ceph Cluster
+=======================================
+A Ceph cluster consists of the following core components:
+1.	Monitors – These must be an odd number, such as one, three, or five.  Three is the preferred configuration.
+2.	Object Storage Devices (OSD) – used as storage nodes
+3.	Metadata Servers (MDS) – Optional in some configurations.
+.
 
 RADOS is a reliable object store, used by Ceph, but also directly
 accessible.
@@ -15,7 +25,7 @@ RBD is a Linux kernel feature that exposes RADOS storage as a block
 device. Qemu/KVM also has a direct RBD client, that avoids the kernel
 overhead.
 
-.. image:: overview.png
+.. image:: accessmethods.jpg
 
 
 
