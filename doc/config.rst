@@ -84,8 +84,8 @@ To build Ceph from the source code, you must have the following packages install
 * autoconf 
 *	automake 
 *	cdbs 
-?	g++ 
-?	gcc 
+*	g++ 
+*	gcc 
 ?	git 
 ?	libatomic-ops-dev 
 ?	libboost-dev 

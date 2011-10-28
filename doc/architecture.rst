@@ -83,6 +83,6 @@ Related Documentation
 ----------------------
 
 Once you have determined your configuration needs, make sure you have access to the following documents:
-- Ceph Installation and Configuration Guide
-- Ceph System Administration Guide
-- Ceph Troubleshooting Manual
+* Ceph Installation and Configuration Guide
+* Ceph System Administration Guide
+* Ceph Troubleshooting Manual
