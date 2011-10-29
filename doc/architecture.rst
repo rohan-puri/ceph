@@ -22,6 +22,7 @@ Cephs flexible and scalable architecture translates into cost savings for users.
 reliability.  Nodes can be added *on the fly* with no impact to the system. In the case of node failure, the load is re-distributed with no degradation to the system. 
 Failure detection is rapid and immediately remedied by efficiently re-adding nodes that were temporarily cut off from the network.
 
+
 ---------------------
  Manageability
 ---------------------
@@ -31,6 +32,25 @@ configuration.  It also features multiple access methods to its object storage, 
 Figure 1 displays this configuration.
 
 .. image:: images/CEPHConfig.jpg
+
+
+---------------------
+Hardware Independent
+---------------------
+
+Ceph is completely hardware independent, and is supported on any server platform, including Dell, HP, AMD Rack-mount Servers, and IBM Blade Center servers, to name a few.  
+Customers do not have to invest in any new hardware to use Ceph, because their existing system can support it.  
+
+---------------------
+Configurability
+---------------------
+
+Ceph is highly configurable.  As your business needs grow, you can seamlessly add components to your cluster at any time!  This includes Object Storage Devices (OSD), 
+Metadata Servers (MDS) and monitors.  You can also easily change the number of Placement Groups (PGs) in the OSD clusters whenever necessary. 
+Figure 2 displays the accessibility features.
+
+.. image:: images/AccessMethods.jpg
+
 
 ======================
 RADOS
