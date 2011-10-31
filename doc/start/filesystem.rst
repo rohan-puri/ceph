@@ -1,5 +1,5 @@
 ========================
- Starting to use CephFS
+Using the Ceph File System
 ========================
 
 Introduction
