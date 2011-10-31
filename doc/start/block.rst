@@ -1,16 +1,14 @@
 .. index:: RBD
 
 =====================
- Starting to use RBD
+RADOS Block Device
 =====================
+This document describes the features and benefits provided by the RADOS Block Device feature of Ceph.  The audience for this document includes sales and marketing personnel, new customers, 
+and all persons who need to get a basic overview of the features and functionality of the system
 
-Introduction
-============
 
-`RBD` is the block device component of Ceph. It provides a block
-device interface to a Linux machine, while striping the data across
-multiple `RADOS` objects for improved performance. For more
-information, see :ref:`rbd`.
+The RADOS Block Device (RBD) provides a block device interface to a Linux machine.  
+To the user, RDB is transparent, which means that the entire Ceph system looks like a single, limitless hard drive that is always up and has no size limitations.  .
 
 
 Installation
@@ -38,8 +36,11 @@ Then, authorize the key to access the new pool. Follow the
 instructions in :ref:`auth-pool`.
 
 
-Usage
-=====
+RBD Snapshots
+=============
+RBD provides the ability to create snapshots of any image for backup purposes.  These images can then be exported to any file on the cluster.  
+The following drawing shows how this feature can be used to create clones of an image called the Golden Master Snapshot.  
+These clones can then be ready to be used as backups any time an image goes down or needs to be duplicated for a new configuration
 
 `RBD` can be accessed in two ways:
 
