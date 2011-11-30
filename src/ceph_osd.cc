@@ -65,6 +65,7 @@ int main(int argc, const char **argv)
   bool mkkey = false;
   bool flushjournal = false;
   bool convertfilestore = false;
+  bool get_journal_fsid = false;
   bool get_osd_fsid = false;
   bool get_cluster_fsid = false;
   std::string dump_pg_log;
@@ -92,6 +93,8 @@ int main(int argc, const char **argv)
       get_cluster_fsid = true;
     } else if (ceph_argparse_flag(args, i, "--get-osd-fsid", (char*)NULL)) {
       get_osd_fsid = true;
+    } else if (ceph_argparse_flag(args, i, "--get-journal-fsid", (char*)NULL)) {
+      get_journal_fsid = true;
     } else {
       ++i;
     }
@@ -250,6 +253,13 @@ int main(int argc, const char **argv)
     cout << osd_fsid << std::endl;
     exit(0);
   }
+  if (get_journal_fsid) {
+    uuid_d fsid;
+    int r = OSD::peek_journal_fsid(g_conf->osd_journal, fsid);
+    if (r == 0)
+      cout << fsid << std::endl;
+    exit(r);
+  }
 
   pick_addresses(g_ceph_context);
 
@@ -273,6 +283,8 @@ int main(int argc, const char **argv)
   if (!hb_addr.is_blank_ip())
     hb_addr.set_port(0);
   messenger_hbout->bind(hb_addr, getpid());
+
+  print_banner();
 
   cout << "starting osd." << whoami
        << " at " << client_messenger->get_ms_addr()

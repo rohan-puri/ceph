@@ -387,6 +387,19 @@ done:
   return ret;
 }
 
+
+int FileJournal::peek_fsid(uuid_d& fsid)
+{
+  int r = _open(false, false);
+  if (r < 0)
+    return r;
+  r = read_header();
+  if (r < 0)
+    return r;
+  fsid = header.fsid;
+  return 0;
+}
+
 int FileJournal::open(uint64_t next_seq)
 {
   dout(2) << "open " << fn << " fsid " << fsid << " next_seq " << next_seq << dendl;

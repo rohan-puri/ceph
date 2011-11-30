@@ -56,4 +56,6 @@ void global_init_chdir(const CephContext *cct);
  */
 int global_init_shutdown_stderr(CephContext *cct);
 
+void print_banner(void);
+
 #endif
